@@ -1,0 +1,20 @@
+Titius-Bode law
+---------------
+
+Make a list of planet distances from the Sun (semimajor axis) using the Bode’s law and calculate the difference in % from the real planet’s distance.
+
+Read more about Bode’s law to understand how to approach the problem: https://en.wikipedia.org/wiki/Titius%E2%80%93Bode_law
+
+Here is how you can calculate the deviation percentage:
+
+Deviation percentage = (observed - expected)/expected * 100
+
+Steps for solving the problem:
+
+    - Find the formula for calculating planet distances using Bode’s law: a = 0.4 + 0.3*2^m
+
+    - Make a list of “m’s”: -inf, 0, 1, 2… 7 (question: how can we roughly approximate minus infinity?)
+
+    - Make a list of known planet distances
+
+    - Go through each “m” for each planet and calculate its predicted distance and the difference in % from the known distance: diff = (known_distance - predicted)/predicted*100%

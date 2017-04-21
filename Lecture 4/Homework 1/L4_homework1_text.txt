@@ -1,0 +1,17 @@
+In this homework, you will learn how to take data from a text file and plot it on a graph. Use the L4_homework1_generate_data.py file to generate the data.txt file. If you open the file, you will see that if contains time series data (time vs. signal), and that there is a one line header. Use the function from the TextFileParser module to load the data into Python, then convert the data into a numpy array (float64). You will also have to separate two columns of the numpy array into two arrays. Here are the first three lines of the solution, which will help you get started:
+
+   # Load the data
+
+   data = parseTextFile('data.txt', header=1)
+
+   # Convert the data to a numpy array, as floats
+
+   data = np.array(data).astype(np.float64)
+
+   # Split the data into time and signal
+
+   time, signal = np.hsplit(data, 2)
+
+The array ‘time’ will hold the timing information (that is our X axis of the plot), and ‘signal’ is our Y axis data. Plot time vs. signal.
+
+Next, plot a solid red horizontal line which will show the mean value of the data. Then plot a red dashed horizontal line which will show the level of 2 sigma (standard deviations) above the mean value. Turn on the grid, and label axes, and make a title for the plot. I have attached the resulting plot, so you should aim to reproduce it.

@@ -1,0 +1,31 @@
+Use the L3_T1_generate_data.py script to generate the 'data' folder (be sure to put it into a separate folder, e.g. in "Lecture 3/Task 1" folder, so it does not mess up your other files in the Lecture 3 folder.
+
+In the folder you have files named "HL_fri_nov_25_00-04-15_2016_033253.eps.png.txt”, "HL_sat_nov_26_06-37-08_2016_089369.eps.png.txt”, "HL_thu_nov_24_18-30-04_2016_566493.eps.png.txt”, ...
+
+When you sort the files in the directory, they are not sorted by their time (Monday, Tuesday, Wednesday, etc.) but alphabetically, with puts Friday in front of Monday! Make a script which will rename the files in a way so the days are replaced with their respective ordinal numbers, 1 for Monday, 2 for Tuesday, etc.
+
+Original name                                  |  Fixed name
+---------------------------------------------------------------------------------------------
+HL_fri_nov_25_00-04-15_2016_033253.eps.png.txt | HL_5_nov_25_00-04-15_2016_033253.eps.png.txt
+
+HL_sat_nov_26_06-37-08_2016_089369.eps.png.txt | HL_6_nov_26_06-37-08_2016_089369.eps.png.txt
+
+HL_thu_nov_24_18-30-04_2016_566493.eps.png.txt | HL_4_nov_24_18-30-04_2016_566493.eps.png.txt
+
+---------------------------------------------------------------------------------------------
+	
+
+Steps for solving the problem:
+
+    - Get a list of all files in the directory
+
+    - Break up the name of individual pieces
+
+    - Extract the day name
+
+    - Replace the day name with its ordinal number
+
+    - Rename the file
+
+
+If you mess up the original data, feel free to delete the data folder, and run the L3_T1_generate_data.py script, which will generate the data from scratch!

@@ -1,0 +1,32 @@
+You were running your code on a supercomputer for 2 months, and it is finally done, the data is in! But alas, your code has put all data in the same folder, but you need it organized by individual directories. Instead of spending hours making new directories and sorting the data, you feel confident enough to write a Python script which will do the sorting for you!
+
+You were running some cutting edge clustering algorithm on the supercomputer, and there are 4 files for each cluster: *_modeled.txt, *_original.txt, *_fitted.txt and *_final.txt file. Different clusters are numerated in the following way: Cluster_1*, Cluster_2*, Cluster_3*, etc.
+
+Thus, make a new directory for each cluster (name it Cluster_n, where n is the number of the cluster), and sort all files belonging to that cluster into each directory.
+
+The resulting directory structure should look like this:
+
+data/
+    Cluster_1/
+        Cluster_1_sol_165_216_modeled.txt
+        Cluster_1_sol_185_272_original.txt
+
+        Cluster_1_sol_212_278_fitted.txt
+
+        Cluster_1_sol_289_341_final.txt
+
+    Cluster_2/
+
+        Cluster_2_sol_16_323_final.txt
+
+        Cluster_2_sol_17_125_original.txt
+
+        Cluster_2_sol_120_252_fitted.txt
+
+        Cluster_2_sol_136_216_modeled.txt
+
+    Cluster_3/
+
+        ...
+
+Hint: You will first have to find the names of clusters present in the data, you can do that by going through each file name and adding to it only those numbers which you didn’t encounter before.

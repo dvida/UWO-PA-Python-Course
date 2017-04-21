@@ -1,0 +1,35 @@
+Write a script which will generate a 150x150 Ulam spiral as an image: https://en.wikipedia.org/wiki/Ulam_spiral
+
+More on Ulam spirals: https://www.youtube.com/watch?v=iFuR97YcSLM&feature=youtu.be
+
+You will need to make functions for:
+------------------------------------
+
+    - Making the next step in the spiral (X, Y position, direction, number of steps) - the easiest approach is to assume that every (x, Y) pixel on the image represents a certain state of the spiral, and that you can apply to that state a certain function which will always give you the next step in the spiral. Let’s say we are generating a 100x100 spiral. This would be the start the the spiral (numbers at the left and bottom represent the Y and X coordinates of the position of the number on the image):
+
+		# Y
+
+		# 52           --13
+
+		#                |
+
+		# 51    5--4--3  12
+
+		#       |     |  |
+
+		# 50    6  1--2  11
+
+		#       |        |
+
+		# 49    7--8--9--10
+
+	# X         49 50 51 52
+
+	So when we are at (50, 50), the current number is 1, the next direction in right. After we take one step, the current number is 2, we are at (51, 50) and the next direction is up, etc. After that, the number is 3, position is (51, 51) and the next direction is left...
+
+	Try to find a rule which you can use to calculate when the change in direction happens, after that, it is all very simple.
+
+
+    - Checking if the given number is a prime (can even numbers be prime? do you really need to try to divide by all numbers up to the given number to check that it is prime?)
+
+    - Generating an image

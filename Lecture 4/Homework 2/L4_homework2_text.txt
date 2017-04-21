@@ -1,0 +1,1 @@
+Make a function that will tell you how many seconds you have been alive (hint: take a look at the datetime library), the function will take a string as an argument, the date and time of your birth in the “YYYY-mm-dd HH:MM:SS” format. I am giving you a complete artistic freedom on how you should actually approach this problem.

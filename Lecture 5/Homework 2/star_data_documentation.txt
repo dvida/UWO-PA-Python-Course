@@ -1,0 +1,15 @@
+Columns:
+- Name - Name of the star
+- RA - Right Ascension in degrees, ICRS coord. (J2000)
+- Dec - Declination in degrees, ICRS coord. (J2000)
+- pa_RA - Proper motion in right ascension, in miliarcseconds per year
+- pa_dec - Proper motion in declination, in miliarcseconds per year
+- Vr - radial velocity in kilometers per second, a positive value means that the star is moving away from us
+- parallax - parallax of the star in miliarcseconds, HINT: to convert the parallax to the distance in parsecs, use: d = 1/parallax
+
+Other values:
+1 parsec = 3.0857e13 km
+1 parsec = 2.0626481e5 AU
+1 parsec = 3.26156 ly
+1 AU = 1.495978707e8 km
+1 ly = 9.4607304725808e12 km

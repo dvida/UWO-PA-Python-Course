@@ -1,0 +1,9 @@
+Background story: I have recently read that one of the stars covered by the Kepler K3 mission is Wolf 359, one of the nearest stars to us. I have found that name somehow familiar, Wolf 359, hmmm…. Ah yes, that is the name of the famous Star Trek battle, the first major engagement with the Borg! I proceeded to google ‘Wolf 359’ and read the Wiki article about it. It turns out it is a very interesting star, but this graph caught my attention: https://en.wikipedia.org/wiki/Wolf_359#/media/File:Near-stars-past-future-en.svg
+
+At that moment I realized that making this graph would be an awesome homework assignment!
+
+You are provided with a star catalog in a text format, which was pulled from SIMBAD. Use the TextFileParser module you wrote for Lecture 2 Task 3. In the data file, you are given the right ascension and declination of the star, its radial velocity, proper motion and parallax. This information should be enough for you to calculate its position and velocity vector relative to us.
+
+Make a plot of distances to the nearest stars from the 60,000 years in the past to 100,000 years in the future.
+
+On this link, you will find everything you need about calculating the position of the stars and their velocities: http://www.astronexus.com/a-a/motions-long-term

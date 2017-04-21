@@ -1,0 +1,37 @@
+Calculating the age of the Universe
+---------------------------------
+
+Back in the 1920s, the world was shocked by Edwin Hubble's revelation that the universe is expanding. While his discovery was groundbreaking back in the day, we can easily replicate his results today. Let me give you a quick overview of the background, so you know what the task actually is (astronomers, excuse me if I oversimplified the underlying physics for the needs or this homework).
+
+It all boils down to one thing - the Doppler effect. For those who need reminding: you can notice the Doppler effect while you are standing on the side of the road while an ambulance is racing towards the hospital. First, as it comes towards you, you can hear that its siren has a high pitch (its sound frequency is higher). At the moment it passes next to you, you can hear a sudden drop in its pitch, as if the sound it produces becomes deeper (the frequency of the sound becomes lower). The reason for this is simple: The speed of sound in air is (more or less) constant, at around 343 m/s - if you put a siren on a car, go to the highway and floor it, once you reach a speed of 110 km/h (~30 m/s), the sound waves produced by the siren in front of your car will NOT travel at 373 m/s. Instead, the sound waves in front of your car will still travel at 343 m/s, but they will become "compressed", effectively shortening the wavelength, thus increasing the frequency of the sound waves. At the back of your car, the opposite happens - the sound waves are getting 'stretched'.
+The same things happens with light. Its speed is fixed at about 3*10^8 m/s, so if you start going fast enough, the frequency of light you are emitting will start to change. The light "waves" in front of you will get "compressed", and this will shorten its wavelength. And light with shorter wavelengths will seem bluer than normal light. This is called "blue shift". If someone was looking at you from behind, as you are moving away from them, they would see the opposite - as the wavelength of light gets stretched, you would seem redder than you are. This effect is called "red shift".
+
+If you're still confused, maybe Carl Sagan can help you out: https://www.youtube.com/watch?v=Uy7rrrCQh2w
+
+So, back to the main story. Edwin Hubble looked at light of distant galaxies, and concluded that they are all red shifted, i.e. moving away from us. Furthermore, galaxies further away from us seemed to be moving away at a greater speed than those which are closer. These observations are called "Hubble's law". The best explanation for them is that our Universe is expanding. This opens up another question - if the Universe is expanding, when did this expansion begin?
+
+We will look into how we can calculate that time, but first we need some data. There are many online databases one can access and download information about galaxies. What we are looking for are 2 pieces of information - the distance to the galaxy, and its relative speed by which it is moving away from us. For convenience, I have provided you with a CSV file (you can read it in as any text file with comma-delimited values) which contains this data. The first column is the name of the galaxy, the second column is the distance in megaparsecs, and the third column is its relative radial velocity (in km/s).
+
+If you plot this data, velocity vs. distance (please to that), you can notice a linear dependence between them. This gives us a great opportunity to test out our newly acquired linear regression skills. Use any linear regression technique you like, although I recommend using one of the robust techniques, as there are many outliers. But first, convert the distance from megaparsecs to kilometers (see 'Steps for solving the homework' below for more information).
+
+OK, so after we have fitted the line, we have a relation which is telling us how the distance to the galaxy changes with its relative velocity. Congratulations! You have now measured the Hubble constant! (although not in the units astronomers usually use). The question now is: at what time was the velocity of all galaxies zero, i.e. how long before the present did the expansion start? So, what can the parameters of the line tell us about this? What are the units of the slope and the intercept?
+
+The slope itself is the Hubble constant, and its units are (km/s)/km = 1/s. The inverse of the Hubble constant is called Hubble time, and is very close to the actual age of the Universe ("The Hubble time is the age it would have had if the expansion had been linear, and it is different from the real age of the universe because the expansion isn't linear; they are related by a dimensionless factor which depends on the mass-energy content of the universe, which is around 0.96 in the standard Lambda-CDM model." - Wikipedia article on Hubble's law). So if we take the inverse of our slope and convert the obtained value from seconds to years, multipy that by 0.96, we will get the approximate age of the universe!
+
+
+
+Steps for solving the homework:
+1. Load the galaxy data from the galaxies.csv file.
+2. Convert megaparsecs to kilometers:
+    1 MPc = 3.08567758149137e+19 km
+3. Plot the velocity vs. distance graph.
+4. Fit a line through the velocity vs. distance data.
+5. Take the inverse of the slope, convert the value from seconds to years, and multipy it by 0.96
+6. Print out the result in billions of years.
+7. Compare the obtained value with the currently accepted age of the Universe.
+
+BOUNS:
+What if we used a different method for linear regression? How does this influence the final result? Should we be careful when using the least squares regression on noisy data? NOTE: Be aware that you can't get the line parameters directly from RANSAC and Theil-Sen, you will have to feed them two X values (e.g. 0 and 1e22), get the Y values using y = estimator.predict(x), and calculate the slopes yourself. Also, RANSAC will randomly choose a very small subset of points from the data to make an estimate - you can make that subset larger by passing the min_points argument to the RANSAC estimator, e.g. if you want to use 50% points, you would write: ransac = RANSACRegressor(min_samples=0.5).
+
+This homework was inspired by this Reddit post (although the guy fudged the data a bit):
+https://www.reddit.com/r/dataisbeautiful/comments/5st2qn/i_got_a_dataset_of_4240_galaxies_and_calculated/

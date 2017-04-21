@@ -1,21 +1,6 @@
 # UWO Physics &amp; Astronomy Python Course
 Python course designed for grad students of the Physics &amp; Astronomy department at the University of Western Ontario.
 
-## Requirements:
-
-1. Python 3
-
-1. Python libraries:
-    1. Numpy (when installing on Windows, be sure to get the MKL package as well)
-    1. Matplotlib
-    1. Scipy (if the installation is failing on Linux, you are probably missing a few dependencies)
-    1. Sci-kit learn
-    1. Jupyter notebook
-    1. Cython (this one may be tricky to get working on Windows if you don’t have Visual Studio installed, you will have to install an external C compiler and play with a few configuration files, but there are instructions online how to get it to work)
-    1. astroquery
-
-1. fadf
-
 
 ## Installing Python on your computer
 
@@ -31,6 +16,17 @@ If you are using Sublime on Linux, you might have to change an environment varia
 This is probably a more difficult route, but this will give you a greater knowledge and flexibility when it comes to managing your Python libraries.  This is what I always do, as I like to have a better control over my Python installation.
 The thing is, I cannot give universal instructions how to install Python and all its packages on your computer, as it depends on the operating system you are using.  What I can do is give you a list of things you’ll need, and let you google how to install them and get them working – there are plenty of resources online.
 We are using Python 3.x (I recommend installing Python with the highest ‘x’ you can find, i.e. the latest version).
+
+1. Python 3
+
+1. Python libraries:
+    1. Numpy (when installing on Windows, be sure to get the MKL package as well)
+    1. Matplotlib
+    1. Scipy (if the installation is failing on Linux, you are probably missing a few dependencies)
+    1. Sci-kit learn
+    1. Jupyter notebook
+    1. Cython (this one may be tricky to get working on Windows if you don’t have Visual Studio installed, you will have to install an external C compiler and play with a few configuration files, but there are instructions online how to get it to work)
+    1. astroquery
 
 
 

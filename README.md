@@ -1,6 +1,95 @@
 # UWO Physics &amp; Astronomy Python Course
 Python course designed for grad students of the Physics &amp; Astronomy department at the University of Western Ontario.
 
+## Course overview
+
+### Lesson 1
+* Print statement (Hello world!) → running with Ctrl+B
+* Comments
+* Variables and types (duck typing):
+    * ints, floats (+, -, *, /, //, **, %, round function)
+    * Multiple assignments
+    * Strings
+        * Adding strings
+        * Accessing individual chars
+        * Selecting a range of chars
+        * Modifying strings - immutable!
+        * len function
+        * Repetition by multiplying
+    * Converting one type to another
+* Lists - universal containers!
+    * append, pop, indexing, insert, remove
+    * Reversing a list
+    * Unpacking elements to variables
+    * Multidimensional lists
+    * Nested lists
+    * range statement
+    * map statement
+    * join to string
+
+### Lesson 2
+* While loops
+* If statements
+* For loops
+* File input/output
+* Hands on example
+* Homework - lists, loops
+
+### Lesson 3
+* File I/O continued
+* os and shutil libraries - handling files, directories
+* Task - batch file renaming (inspired by a problem from real life)
+* Homework - batch file sorting
+
+### Lesson 4
+* Functions
+* Programming style and style guides
+* Handling and visualizing data 1
+    * Numpy ("numerical Python")
+    * Matplotlib - basics plots
+* Task 1 - function for loading data from text files
+* Task 2 - load data from a file and plot it
+* Homework - handling time
+
+### Lesson 5
+* Advanced plotting in matplotlib
+* Advanced data manipulation in numpy
+* Sampling univariate and multivariate probability distributions
+* Plotting histograms
+* Sorting arrays
+* Plotting images
+* Plotting higher dimensionality data
+
+### Lesson 6
+* linear regression with least squares, RANSAC and Theil-Sen estimator (and their comparison)
+* minimization: BFGS, Nelder-Mead and basin-hopping
+* fitting nonlinear models
+
+### Lecture 7
+* integrating ODEs
+* spline interpolation
+* Fourier transform
+* filters for signal processing
+* wavelets
+* detecting a low-frequency signal (determine it's exact occurrence in time and duration) in data abundant with high-frequency noise
+
+### Lecture 8
+* generators
+* object oriented programming (basics, operator overloading, inheritance)
+* list comprehension
+* dictionaries
+* sets
+
+### Lecture 9
+* parallel programming (multiprocessing, pool of workers, universal function for parallelization)
+* exceptions (i.e. error handling)
+* decorators
+* regular expressions
+
+### Lecture 10
+* astroquery - querying astronomical databases and plotting data (we will have fun with SDSS data and color magnitude diagrams of globular clusters)
+* a short word on dependencies
+* Cython - converting slow Python code to C
 
 ## Installing Python on your computer
 

@@ -91,6 +91,10 @@ Python course designed for grad students of the Physics &amp; Astronomy departme
 * a short word on dependencies
 * Cython - converting slow Python code to C
 
+### Homeworks
+Homework solutions are available upon request.
+
+
 ## Installing Python on your computer
 
 There are two approaches to installing Python packages:

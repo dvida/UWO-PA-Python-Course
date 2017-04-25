@@ -248,10 +248,17 @@ print(np.cos(arr))
 # Exponential
 print(np.exp(arr))
 
+
 ###################################
+
+### INTRO TO MATPLOTLIB
+
+# Basic anatomy of a plot: https://matplotlib.org/_images/anatomy1.png
+
 
 import matplotlib.pyplot as plt
 
+# Sine function in the range x=[0, 10]
 x = np.linspace(0, 10, 100)
 y = np.sin(x)
 
@@ -262,7 +269,7 @@ plt.plot(x, y)
 # plt.show()
 
 # Adding a 1 sigma above mean line
-plt.plot(x, np.zeros_like(x)+np.mean(y)+np.std(y), linestyle='--', color='red')
+plt.plot(x, np.zeros_like(x) + np.mean(y) + np.std(y), linestyle='--', color='red')
 
 # plt.show()
 

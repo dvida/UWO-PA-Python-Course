@@ -10,8 +10,8 @@ b = 6
 print('a =', a)
 print('b =', b)
 
-print('Addition:', a+b)
-print('Subtraction:', a-b)
+print('Addition:', a + b)
+print('Subtraction:', a - b)
 print('Multiplication:', a*b)
 print('Division:', a/b)
 
@@ -68,7 +68,7 @@ print(name[1::2])
 print(name[1:8:2])
 
 # Modifying strings, Holy Grain
-print(title[:-1]+'n')
+print(title[:-1] + 'n')
 
 # String length
 print('Length:', len(name))
@@ -80,7 +80,7 @@ print('First line\nSecond line')
 print('Hello! '*10)
 
 # Counting substrings
-print("'n's in "+name+':', name.count('n'))
+print("'n's in " + name + ':', name.count('n'))
 
 # Replacing substrings
 print(name.replace('o', 'a'))
@@ -101,7 +101,7 @@ print(x, y, z)
 
 a = 'rosemead'
 b = 'new york'
-print(a[2:5]+b[4:]+'a')
+print(a[2:5] + b[4:] + 'a')
 
 # Semyorka was the world's first ICMB (developed in 1957), and it was used (in a modified form) to launch 
 # Sputnik, the world's first artificial satellite.
@@ -267,7 +267,7 @@ q = 5 - 3j
 
 print('r =', r)
 print('q =', q)
-print('r+q =', r+q)
+print('r+q =', r + q)
 print('abs(r)', abs(r))
 
 # Accessing complex number parts

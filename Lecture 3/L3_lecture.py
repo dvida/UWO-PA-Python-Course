@@ -113,7 +113,7 @@ with open(new_file_name, 'w') as f:
             str_line.append('{:.3f}'.format(element))
 
         # Add the reference
-        str_line.append(ref)
+        str_line.append(line[-1])
 
         print(str_line)
 

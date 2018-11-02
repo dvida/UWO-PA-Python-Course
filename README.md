@@ -101,7 +101,7 @@ There are two approaches to installing Python packages:
 
 ### a) Installing Python Anaconda
 
-Python Anaconda is a software package which contains Python + most used Python libraries. In all probability, is has all libraries you may ever need. To install Python Anaconda go here: https://www.continuum.io/downloads and be careful to select the Python 3 version. 
+Python Anaconda is a software package which contains Python + most used Python libraries. In all probability, is has all libraries you may ever need. To install Python Anaconda go here: https://www.anaconda.com/download and be careful to select the Python 3 version. 
 If you are using Sublime on Linux, you might have to change an environment variable which will tell Sublime which installation of Python to use. Please see the section “Installing Sublime on your computer” below which will explain how to install Sublime Text 3 as well.
 
 ### b) Installing everything from scratch

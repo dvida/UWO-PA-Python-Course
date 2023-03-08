@@ -3,7 +3,7 @@ Python course designed for grad students of the Physics &amp; Astronomy departme
 
 ## Course overview
 
-### Lesson 1
+### Lecture 1
 * Print statement (Hello world!) → running with Ctrl+B
 * Comments
 * Variables and types (duck typing):
@@ -27,7 +27,7 @@ Python course designed for grad students of the Physics &amp; Astronomy departme
     * map statement
     * join to string
 
-### Lesson 2
+### Lecture 2
 * While loops
 * If statements
 * For loops
@@ -35,13 +35,13 @@ Python course designed for grad students of the Physics &amp; Astronomy departme
 * Hands on example
 * Homework - lists, loops
 
-### Lesson 3
+### Lecture 3
 * File I/O continued
 * os and shutil libraries - handling files, directories
 * Task - batch file renaming (inspired by a problem from real life)
 * Homework - batch file sorting
 
-### Lesson 4
+### Lecture 4
 * Functions
 * Programming style and style guides
 * Handling and visualizing data 1
@@ -51,7 +51,7 @@ Python course designed for grad students of the Physics &amp; Astronomy departme
 * Task 2 - load data from a file and plot it
 * Homework - handling time
 
-### Lesson 5
+### Lecture 5
 * Advanced plotting in matplotlib
 * Advanced data manipulation in numpy
 * Sampling univariate and multivariate probability distributions
@@ -60,7 +60,7 @@ Python course designed for grad students of the Physics &amp; Astronomy departme
 * Plotting images
 * Plotting higher dimensionality data
 
-### Lesson 6
+### Lecture 6
 * linear regression with least squares, RANSAC and Theil-Sen estimator (and their comparison)
 * minimization: BFGS, Nelder-Mead and basin-hopping
 * fitting nonlinear models
